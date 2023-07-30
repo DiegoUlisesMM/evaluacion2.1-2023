@@ -4,7 +4,7 @@ import { SvgXml } from 'react-native-svg';
 import { FontAwesome5 } from '@expo/vector-icons'; 
 
 export default function LoginCliente(props) {
-  const { navigation } = props;
+  const { navigation } = props; 
   const goNavigationRegistrer = ()=>{
     navigation.navigate('Registro')
   }

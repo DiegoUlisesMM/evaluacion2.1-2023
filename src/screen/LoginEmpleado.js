@@ -6,7 +6,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 export default function LoginEmpleado(props) {
   const { navigation } = props;
   const goNavigationRegistrer = ()=>{
-    navigation.navigate('Registro')
+    navigation.navigate('Registro') 
   }
   return (
     <View style={styles.mainContainer}>

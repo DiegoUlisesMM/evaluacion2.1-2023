@@ -5,7 +5,7 @@ import RegistroEmpleado from './RegistroEmpleado';
 
 export default function Registro(props) {
     const { navigation } = props;
-    const goInicio = ()=>{
+    const goInicio = ()=>{ 
         navigation.navigate('Inicio')
     }
     const goRegisterEmpleado = ()=>{

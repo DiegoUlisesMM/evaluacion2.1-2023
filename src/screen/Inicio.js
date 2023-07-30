@@ -3,7 +3,7 @@ import React from 'react'
 import { SvgXml } from 'react-native-svg';
 
 export default function Inicio(props) {
-  const { navigation } = props;
+  const { navigation } = props; 
 const goNavigationRegistrer = ()=>{
   navigation.navigate('Registro')
 }

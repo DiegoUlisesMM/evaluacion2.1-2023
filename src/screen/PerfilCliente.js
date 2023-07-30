@@ -4,7 +4,7 @@ import React from 'react'
 export default function PerfilCliente() {
   return (
     <View>
-      <Text>PerfilCliente</Text>
+      <Text>PerfilCliente</Text> 
     </View>
   )
 }

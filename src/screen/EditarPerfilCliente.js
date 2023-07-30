@@ -2,7 +2,7 @@ import { View, Text, SafeAreaView, StyleSheet, Image, TouchableOpacity } from 'r
 import React from 'react'
 import { SvgXml } from 'react-native-svg';
 
-export default function EditarPerfilCliente() {
+export default function EditarPerfilCliente() { 
   return (
     <SafeAreaView style={styles.contenedorAccount}>
       <View style={styles.containerSvg}>
