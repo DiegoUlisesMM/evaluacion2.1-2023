@@ -18,6 +18,7 @@ const goNavigationLoginCliente = ()=>{
 
   return (
     <View styles={styles.mainContainer} >
+      <ScrollView>
       <View style={styles.containerSvg}>
         <SvgXml
           xml={fondoSvg}
@@ -50,6 +51,7 @@ const goNavigationLoginCliente = ()=>{
 </View>
        
       </View>
+      </ScrollView>
     </View>
   )
 }
