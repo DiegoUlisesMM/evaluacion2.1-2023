@@ -5,6 +5,7 @@ import { Ionicons } from '@expo/vector-icons'; // Importa los iconos de Expo
 import Account from '../screen/Account';
 import Home from '../screen/Home';
 import Favoritos from '../screen/Favoritos';
+import EditarPerfilCLiente from '../screen/EditarPerfilCliente';
 
 export default function NavigationTab() {
   const Tab = createBottomTabNavigator();
@@ -41,6 +42,11 @@ export default function NavigationTab() {
             <Ionicons name="heart-outline" size={size} color={color} />
           ), // Icono para la pestaña "Favoritos"
         }}
+      />
+      <Tab.Screen
+        name="EditarPerfilCLiente"
+        component={EditarPerfilCLiente}
+        options={{ tabBarVisible: false }} // Ocultar el icono en la barra inferior
       />
     </Tab.Navigator>
   );
