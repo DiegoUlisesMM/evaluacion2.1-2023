@@ -1,10 +1,17 @@
-import { View, Text, SafeAreaView, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { View, Text, SafeAreaView, StyleSheet, Image, TouchableOpacity,ScrollView } from 'react-native'
 import React from 'react'
 import { SvgXml } from 'react-native-svg';
 
-export default function Account() { 
+export default function Account(props) { 
+
+  const { navigation } = props; 
+  const goToEditar = ()=>{
+    navigation.navigate('EditarPerfilCLiente')
+  }
+
   return (
     <SafeAreaView style={styles.contenedorAccount}>
+      <ScrollView>
       <View style={styles.containerSvg}>
         <SvgXml
             xml={fondoSvg}
@@ -29,7 +36,7 @@ export default function Account() {
       </View>
       <View style={styles.contenedorBotones}>
       <TouchableOpacity 
-          // onPress={goToEditar}
+          onPress={goToEditar}
           style={styles.botonPerfil}>
           <Text
             style={styles.textoBotonPerfil}
@@ -43,7 +50,7 @@ export default function Account() {
           >Publicar trabajo</Text>
       </TouchableOpacity>
       </View>
-      
+      </ScrollView>
     </SafeAreaView>
   )
 }

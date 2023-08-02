@@ -1,4 +1,4 @@
-import { View, Text, Button, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { View, Text, Button, StyleSheet, Image, TouchableOpacity,ScrollView } from 'react-native'
 import React from 'react'
 import { SvgXml } from 'react-native-svg';
 
